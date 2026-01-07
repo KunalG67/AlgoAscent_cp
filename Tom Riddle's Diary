@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+int n;
+cin >> n;
+vector<string> s(n);
+for (int i = 0; i < n; i++) {
+        cin >> s[i];
+}
+
+
+for (int i = 0; i < n; i++) {
+    bool find = false;
+    for (int j = 0; j < i; j++) {
+        if (s[i] == s[j]) {
+                find = true;
+                break;
+            }
+        }
+
+if(find){
+cout << "YES"<<endl;
+}
+else{
+cout << "NO"<<endl;
+}
+}
+    return 0;
+}
